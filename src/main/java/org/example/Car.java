@@ -1,6 +1,6 @@
 package org.example;
 
-public class Car extends Vehicle {
+public class Car extends Vehicle implements ShopFeatures {
 
     private double price;
     private double discount = 0.9;

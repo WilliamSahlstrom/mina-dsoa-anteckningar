@@ -1,6 +1,6 @@
 package org.example;
 
-public class Vehicle {
+public abstract class Vehicle {
 
     String name;
 

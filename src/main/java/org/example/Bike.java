@@ -1,6 +1,6 @@
 package org.example;
 
-public class Bike extends Vehicle {
+public class Bike extends Vehicle implements ShopFeatures {
 
     public Bike(String name) {
         super(name);
@@ -9,5 +9,10 @@ public class Bike extends Vehicle {
     @Override
     public void soundWarning() {
         System.out.println("pling pling");
+    }
+
+    @Override
+    public double getPrice() {
+        return 0;
     }
 }

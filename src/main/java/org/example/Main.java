@@ -15,7 +15,9 @@ public class Main {
         car.setSalesPersonEmail("Bossman@gmail.com");
         Bike myBike = new Bike("Crecent");
 
-
+        //Abstrakta klass kan inte instanstieras men nog fungera som typ
+        Clothing shirt = new Shirt("Balenciaga");
+        System.out.printf("This shirt is %s\n", anotherShirt.getCondition());
 
         //Upcasting
         Vehicle myRide = new Car("Bugatti");
