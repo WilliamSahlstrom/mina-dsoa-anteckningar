@@ -8,6 +8,10 @@ public class Vehicle {
         this.name = name;
     }
 
+    public void soundWarning() {
+        System.out.println("warning");
+    }
+
     public String getName() {
         return name;
     }

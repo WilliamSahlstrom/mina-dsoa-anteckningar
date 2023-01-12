@@ -10,6 +10,11 @@ public class Car extends Vehicle {
         super(name);
         this.price = 10000;
     }
+    //Överskuggning
+    @Override
+    public void soundWarning() {
+        System.out.println("Tut tut");
+    }
 
     public double getPrice() {
         return price*discount;
@@ -17,6 +22,10 @@ public class Car extends Vehicle {
 
     public String getSalesPersonEmail() {
         return salesPersonEmail;
+    }
+
+    public void refuel() {
+        //fuel up
     }
 
     public void setSalesPersonEmail(String salesPersonEmail) {
