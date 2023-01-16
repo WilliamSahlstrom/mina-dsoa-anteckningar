@@ -1,6 +1,7 @@
 package org.example;
 
 public class Main {
+    String test;
     public static void main(String[] args) {
 
         // Vi instansirar två Car-objekt
