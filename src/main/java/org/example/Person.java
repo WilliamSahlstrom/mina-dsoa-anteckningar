@@ -1,18 +1,16 @@
 package org.example;
 
-public class Car {
-
-    // Instansvariabel
+public class Person {
     private String name;
 
-    // Konstruktormetod för klassen
-    public Car(String name) {
-        // Vi initialiserar instanvarabeln name med metodarumentet name
+    public Person(String name) {
         this.name = name;
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
