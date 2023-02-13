@@ -4,11 +4,15 @@ public class Car extends Vehicle implements ShopFeatures {
 
     private double price;
     private double discount = 0.9;
-
     private String salesPersonEmail;
+
+    //Klass variabel har nyckelorder static
+    static int carsCreated;
+
     public Car(String name) {
         super(name);
         this.price = 10000;
+        carsCreated++;
     }
     //Överskuggning
     @Override
@@ -33,5 +37,9 @@ public class Car extends Vehicle implements ShopFeatures {
             //Validera email addressen och kasta error om den inte är valid
         }
         this.salesPersonEmail = salesPersonEmail;
+    }
+    //Metoden som ska fungera i klasskontext måste vara static
+    public int getCarsCreated() {
+        return carsCreated;
     }
 }
