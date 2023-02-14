@@ -14,9 +14,11 @@ public class Main {
         System.out.println(person.getName());
 
         Linky linky = new Linky();
-        linky.add(new Person(dwarves[2]));
-        linky.add(new Person(dwarves[3]));
-        linky.add(new Person(dwarves[4]));
+        for (int i = 0; i < dwarves.length ; i++) {
+            linky.add(new Person(dwarves[i]));
+        }
+        System.out.printf("Det finns %d noder i linky\n", linky.size());
+        System.out.println(linky.toString());
 
         System.exit(0);
 
