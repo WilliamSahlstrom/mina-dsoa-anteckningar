@@ -8,8 +8,31 @@ public class Main {
     public static void main(String[] args) {
 
         String[] dwarves = {"Fili", "Kili", "Balin", "Dwalin", "Ori", "Nori", "Dori", "Gloin", "Oin", "Bifur", "Bofur", "Bombur", "Thorin"};
+        //new CCCircularArr();
+        //System.exit(0);
+        Queuey queuey = new Queuey(5);
+        queuey.enQueue("A");
+        queuey.enQueue("B");
+        queuey.enQueue("C");
+        queuey.enQueue("D");
+        queuey.enQueue("E");
+        System.out.println(queuey.toString());
+        queuey.enQueue("F");
+        System.out.println(queuey.toString());
+        System.exit(0);
 
 
+        Stacky stacky = new Stacky(3);
+        stacky.push(dwarves[2]);
+        System.out.println(stacky.toString());
+        stacky.push(dwarves[3]);
+        System.out.println(stacky.toString());
+        stacky.push(dwarves[4]);
+        System.out.println(stacky.toString());
+        stacky.pop();
+        System.out.println(stacky.toString());
+
+        //System.exit(0);
         Person person = new Person(dwarves[2]);
         System.out.println(person.getName());
 
@@ -20,7 +43,7 @@ public class Main {
         System.out.printf("Det finns %d noder i linky\n", linky.size());
         System.out.println(linky.toString());
 
-        System.exit(0);
+        //System.exit(0);
 
         /**
          *  StringArray
@@ -42,13 +65,12 @@ public class Main {
         names.reverse();
         System.out.println(names); // Nu kommer namnen i omvänd ordning
 
-        System.exit(0);
+        //System.exit(0);
 
         /**
          * BigO
          */
-        new BigO();
-
+        //new BigO();
 
     }
 }
